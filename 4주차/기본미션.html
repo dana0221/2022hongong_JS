@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>혼공JS_4주차 기본미션</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year){
+            return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)
+        }
+
+        console.log('2022년은 윤년일까? === ' + isLeapYear(2022))
+    </script>
+</body>
+</html>
