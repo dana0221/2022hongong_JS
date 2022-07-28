@@ -2,37 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>혼공JS_3주차 선택미션</title>
+    <title>혼공JS_4주차 선택미션</title>
 </head>
 <body>
     <script>
-        // 1
-        const strA = "사과,배,바나나,귤"
+        let numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76]
 
-        console.log(strA)
-        strA.split(',')
-        console.log(strA)
+        numbers = numbers.filter((x) => x % 2 === 1)
+        numbers = numbers.filter((x) => x  <= 100)
+        numbers = numbers.filter((x) => x % 5 === 0)
 
-        // 2
-        const arrayB = ['사과', '배', '바나나', '귤']
-
-        console.log(arrayB)
-        arrayB.push('감')
-        console.log(arrayB)
-
-        // // 3
-        const arrayC = [1, 2, 3, 4, 5]
-
-        console.log(arrayC)
-        console.log(arrayC.map((x) => x * x))
-        console.log(arrayC)
-
-        // // 4
-        const strD = " 여백이 포함된 메시지 "
-
-        console.log(strD)
-        strD.trim()
-        console.log(strD)
+        console.log(numbers)
     </script>
 </body>
 </html>
